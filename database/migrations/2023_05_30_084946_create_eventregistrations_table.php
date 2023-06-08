@@ -20,6 +20,9 @@ class CreateEventregistrationsTable extends Migration
             $table->string('email');
             $table->string('name');
             $table->timestamps();
+
+            //мягкое удаление
+            $table->softdeletes();
         });
     }
 

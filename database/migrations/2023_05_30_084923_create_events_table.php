@@ -23,6 +23,9 @@ class CreateEventsTable extends Migration
             $table->date('date');
             $table->integer('category_id');
             $table->timestamps();
+
+            //мягкое удаление
+            $table->softdeletes();
         });
     }
 

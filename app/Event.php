@@ -3,9 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 #Создание мероприятия
 class Event extends Model
 {
+    use SoftDeletes;
     protected $fillable = [
         'image',
         'title',

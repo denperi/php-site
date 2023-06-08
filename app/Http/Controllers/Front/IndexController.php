@@ -26,7 +26,7 @@ class IndexController extends Controller
             'event' => $event,
         ]);
     }
-
+//создание меро
     public function event_registration(Event $event, Request $request) {
         if (Auth::check()) {
             $user_id = Auth::user()->id;
@@ -44,7 +44,7 @@ class IndexController extends Controller
 
         return redirect()->back();
     }
-
+//вывод инфы о пользователе
     public function profile() {
         $user = Auth::user();
 
@@ -52,7 +52,7 @@ class IndexController extends Controller
             'user' => $user,
         ]);
     }
-
+//редактирование профиля
     public function profile_save(Request $request) {
         $user = Auth::user();
 

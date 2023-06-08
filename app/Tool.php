@@ -23,7 +23,7 @@ class Tool extends Model
         if(strpos($param,'M')===false) return date($param, $time);
         else return date(str_replace('M',$MonthNames[date('n',$time)-1],$param), $time);
     }
-
+    //проверка url страницы
     public static function checkPage() {
         $url = Request::path();
 
@@ -38,7 +38,7 @@ class Tool extends Model
             return false;
         }
     }
-
+    //получение изображения
     public static function getImage($image, $width, $height) {
         $filename = basename(public_path() . '/upload' . $image);
         if (!file_exists(public_path() . '/upload' . $image)) {
@@ -52,7 +52,7 @@ class Tool extends Model
         }
         return $filename;
     }
-
+    //cклонения
     public static function declension($number, array $data)
     {
         $number = str_replace('+', '', $number);

@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//  Все ссылки на страницы, навигация
 Auth::routes();
 
 Route::get('/', 'Front\IndexController@index')->name('index');

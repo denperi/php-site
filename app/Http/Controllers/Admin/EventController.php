@@ -22,7 +22,7 @@ class EventController extends Controller
             'controller_name' => $this->controller_name,
         ]);
     }
-
+#Добавление записей в таблицу
     public function create()
     {
         $item = new Event();
