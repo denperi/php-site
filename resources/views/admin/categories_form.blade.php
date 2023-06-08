@@ -11,7 +11,7 @@
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="/admin">Главная</a></li>
+                            <li class="breadcrumb-item"><a href="/">Главная</a></li>
                             <li class="breadcrumb-item"><a href="{{route($controller_name.'.index')}}">{{$controller_title}}</a></li>
                             <li class="breadcrumb-item active">
                                 @if ($type == 'add')

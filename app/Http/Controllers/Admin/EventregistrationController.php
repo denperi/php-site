@@ -50,6 +50,8 @@ class EventregistrationController extends Controller
 
     public function destroy(Eventregistration $eventregistration)
     {
+        $eventregistration->delete();
 
+        return redirect()->route($this->controller_name.'.index');
     }
 }
